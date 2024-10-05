@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law AI Helper - Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1e1e24;
+            color: white;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        header {
+            background-color: #1e1e24;
+            padding: 20px 40px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+        }
+
+        .header-logo {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-logo img {
+            border-radius: 8px; 
+        }
+
+        .header-logo span {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .login-button {
+            background: none;
+            border: 2px solid white;
+            padding: 8px 16px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: white;
+            color: #1e1e24; 
+        }
+
+        .main-content {
+            padding: 50px 150px;
+        }
+
+        .main-content h2 {
+            font-size: 100px;
+        }
+
+        .main-content p {
+            font-size: 20px;
+        }
+
+        .subscription {
+            margin-top: 100px;
+        }
+
+        .subscription h3 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .chatbot {
+            margin-top: 150px;
+        }
+
+        .chatbot h3 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .question {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .question-message {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 2px 20px;
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        .question-message h3 {
+            text-align: right;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .question-message p {
+            text-align: right;
+            font-size: 14px;
+        }
+
+        p.question {
+            text-align: right;
+            font-size: 14px;
+        }
+
+        p.answer {
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .answer-message {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 2px 20px;
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        .answer-message h3 {
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .answer-message p {
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .plans {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .plan {
+            background-color: #2a2a2f;
+            margin: 0 15px;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .plan h3 {
+            color: #1E91F5;
+            font-size: 22px;
+        }
+
+        .plan h2 {
+            color: #1E91F5;
+            font-size: 14px;
+        }
+
+        .plan p {
+            font-size: 16px;
+        }
+
+        .plan .price {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #fff;
+        }
+
+        .footer {
+            background-color: #131316;
+            height: 30px;
+            width: 100%;
+            padding: 0 40px;
+            box-sizing: border-box;
+            bottom: 0; 
+            left: 0;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            text-align: center;
+            color: #ccc;
+            line-height: 30px; 
+        }
+
+        .footer-link {
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-container">
+                <a class="header-logo" href="index.html">
+                    <img src="logo.png" width="75px" height="50px">
+                    <span>Law AI Helper / Homepage</span>
+                </a>
+            </div>
+            <a href="chatbot.html">
+                <button class="login-button">GO TO CHATBOT</button>
+            </a>
+        </div>
+    </header>    
+
+    <div class="main-content">
+        <h2>Your reliable helper in legal issues in Latvia 🇱🇻</h2>
+        <p>Our intelligent chatbot will help you understand Latvian legislation, provide legal advice <br> and answer important questions. Get access to up-to-date information on legal <br> issues 24/7, quickly and conveniently.</p>
+
+        <div class="chatbot">
+            <h3>Our <span style="color:#1E91F5">chatbot</span> functionality</h3>
+
+            <p class="question">Ask question ...</p>
+            <div class="question">
+                <div class="question-message">
+                    <h3>User</h3>
+                    <p>How much does it cost to drive without licence?</p>
+                </div>
+            </div>
+
+            <p class="answer">... And receive answer based on Latvian Law System</p>
+            <div class="answer">
+                <div class="answer-message">
+                    <h3>Chatbot</h3>
+                    <p>A fine of 56 to 114 monetary units (280 to 570 euros).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscription">
+        <h3>Subscription plans</h3>
+        <div class="plans">
+            <div class="plan">
+                <h3>Free</h3>
+                <p>10 questions per day</p>
+                <p>200 word limit</p>
+                <p>Global access</p>
+            </div>
+            <div class="plan">
+                <h3>4.99€</h3>
+                <p>25 questions per day</p>
+                <p>400 word limit</p>
+                <p>Global access</p>
+                <p>24/7 support</p>
+            </div>
+            <div class="plan">
+                <h3>9.99€</h3>
+                <p>Unlimited questions per day</p>
+                <p>No word limit</p>
+                <p>1 consultation per month</p>
+                <p>Global access</p>
+                <p>24/7 support</p>
+            </div>
+            <div class="plan">
+                <h3>2.99€</h3>
+                <h2>Student plan</h2>
+                <p>20 questions per day</p>
+                <p>300 word limit</p>
+                <p>Global access</p>
+                <p>1 consultation per month*</p>
+                <p>Global access</p>
+                <p>24/7 support</p>
+                <br>
+                <p>* Consulation only for education purposes</p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <footer class="footer">
+        <p class="footer-text">Law AI Helper - <a class="footer-link" href="index.html">Contact</a> | <a class="footer-link" href="index.html">About</a> | <a class="footer-link" href="index.html">Partners</a> | <a class="footer-link" href="index.html">Legal Information</a></p>
+    </footer>
+
+</body>
+</html>
